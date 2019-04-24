@@ -1,0 +1,2 @@
+class DatePostsController < ApplicationController
+end

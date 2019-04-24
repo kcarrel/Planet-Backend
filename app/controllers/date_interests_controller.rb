@@ -1,0 +1,2 @@
+class DateInterestsController < ApplicationController
+end
