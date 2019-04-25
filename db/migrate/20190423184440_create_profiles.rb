@@ -3,7 +3,6 @@ class CreateProfiles < ActiveRecord::Migration[5.2]
     create_table :profiles do |t|
       t.belongs_to :user
       t.string :name
-      t.string :email
       t.integer :age
       t.integer :max_age_preference
       t.integer :min_age_preference
