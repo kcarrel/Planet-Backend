@@ -49,8 +49,10 @@ ActiveRecord::Schema.define(version: 2019_04_23_184559) do
   create_table "profiles", force: :cascade do |t|
     t.bigint "user_id"
     t.string "name"
+    t.string "email"
     t.integer "age"
-    t.string "age_preference"
+    t.integer "max_age_preference"
+    t.integer "min_age_preference"
     t.string "pronouns"
     t.string "location"
     t.string "image"
