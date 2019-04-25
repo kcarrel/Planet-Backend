@@ -17,6 +17,11 @@ class ProfilesController < ApplicationController
     render json: @profile
   end
 
+  def show
+        @profile = Profile.all.find_by(user_id: params[:id])
+        render :json => @profile
+    end
+
   private
 
   def profile_params
