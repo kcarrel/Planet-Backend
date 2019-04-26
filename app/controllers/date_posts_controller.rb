@@ -1,5 +1,9 @@
 class DatePostsController < ApplicationController
-  skip_before_action :authorized, only: [:create, :profile]
+
+  def index
+    @dateposts = DatePost.all.where_not(user_id: current_user[:id])
+    render json: @dateposts
+  end
 
   def create
     @date_post = DatePost.create(
@@ -10,6 +14,12 @@ class DatePostsController < ApplicationController
       category: date_post_params[:category])
     render json: @date_post
   end
+
+  def show
+    @date_post = DatePost.all.find_by(user_id: params[:id])
+    render :json => @date_post
+  end
+
 
   private
 

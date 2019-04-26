@@ -1,6 +1,11 @@
 class ProfilesController < ApplicationController
-  skip_before_action :authorized, only: [:create, :profile]
+  skip_before_action :authorized, only: [:create, :profile, :index]
 
+  def index
+    @profiles = Profile.all.where.not(user_id: current_user.id)
+    render json: @profiles
+  end
+  
   def create
     @profile = Profile.create(
       user_id: profile_params[:user_id],
