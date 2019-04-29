@@ -26,8 +26,8 @@ class DatePostsController < ApplicationController
 
   #grab all date posts for a user
   def show
-    @date_post = DatePost.all.find_by(user_id: params[:id])
-    render :json => @date_post
+    @date_posts = DatePost.all.where(user_id: params[:id])
+    render :json => @date_posts
   end
 
 

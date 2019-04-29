@@ -1,3 +1,3 @@
 class DateDecisionSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :user_id, :date_interest_id
 end
