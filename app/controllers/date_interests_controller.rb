@@ -20,6 +20,11 @@ class DateInterestsController < ApplicationController
     render :json => @date_interest
   end
 
+  def find
+    @date_interests = DateInterest.all.where(user_id: params[:id])
+    render :json => @date_interests, include: '**'
+  end
+
   def destroy
     DateInterest.all.find(params[:id]).destroy
   end

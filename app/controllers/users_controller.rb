@@ -13,6 +13,14 @@ class UsersController < ApplicationController
   #old way of passing back user upon login
   # render json: { user: UserSerializer.new(current_user) }, status: :accepted
 
+  def update
+    @user = User.all.find(params[:id])
+    @user.update(
+      password: user_params[:password],
+      email: user_params[:email],
+      )
+    render :json => @user
+  end
 
   def create
     @user = User.create(user_params)
