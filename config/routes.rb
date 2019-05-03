@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+    get 'yelp/:query', to: 'application#yelp'
+    get 'ticketmaster/:query', to: 'application#ticketmaster'
   resources :date_decisions
         get '/fetch_by_user/:id', to: 'date_decisions#fetch_by_user'
         get '/fetch_by_id/:id', to: 'date_decisions#fetch_by_id'
