@@ -9,7 +9,7 @@ class ProfilesController < ApplicationController
   def show
     @profile = Profile.all.find(params[:id])
     render :json => @profile
-  end 
+  end
 
   def update
     @profile = Profile.all.find(params[:id])
@@ -40,8 +40,9 @@ class ProfilesController < ApplicationController
       image: profile_params[:image],
       biography: profile_params[:biography],
       gender_preference: profile_params[:gender_preference])
-
-    render json: @profile
+    if @profile.valid?
+      render json: @profile
+    end
   end
 
   def show
