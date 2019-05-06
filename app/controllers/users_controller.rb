@@ -33,7 +33,7 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    DatePost.all.find(params[:id]).destroy
+    User.all.find(params[:id]).destroy
   end
 
   private
