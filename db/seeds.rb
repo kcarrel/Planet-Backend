@@ -133,11 +133,11 @@ Profile.create(user_id: User.all.last.id, name: "Test User", age: 26, max_age_pr
 #42
 DatePost.create(user_id: Profile.all.last.user_id, title: 'Cold brew and conversation', date: '05/09/2019', description: 'Lets grab a cold brew at Moore Coffee House and talk about all our deep seeded issues and/or hopes and dreams...', category: 'sports')
 #43
-DatePost.create(user_id: Profile.all.last.user_id, title: 'Drinks at the Nest, date: '05/10/2019', description: 'There is a gin fizz here that is to die for.', category: 'bar')
+DatePost.create(user_id: Profile.all.last.user_id, title: 'Drinks at the Nest', date: '05/10/2019', description: 'There is a gin fizz here that is to die for.', category: 'bar')
 #44
 DatePost.create(user_id: Profile.all.last.user_id, title: 'Rollerblade at Santa Monica', date: '05/09/2019', description: 'Meet me at the pier to rollerblade around then stop for a drink after!', category: 'other')
 #45
-DatePost.create(user_id: Profile.all.last.user_id, title: 'Beyonce Concert, date: '05/10/2019', description: 'I have been dying to see Beyonce in person since I saw her at Coachella week 1!!', category: 'music')
+DatePost.create(user_id: Profile.all.last.user_id, title: 'Beyonce Concert', date: '05/10/2019', description: 'I have been dying to see Beyonce in person since I saw her at Coachella week 1!!', category: 'music')
 #46
 DatePost.create(user_id: Profile.all.last.user_id, title: 'Top Golf', date: '05/09/2019', description: 'I am a terrible golfer but I hear that this is the next hot spot to check out!', category: 'sports')
 #47
