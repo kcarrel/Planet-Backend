@@ -152,31 +152,14 @@ DateDecision.create(user_id: User.all.last.id, date_interest_id: DateInterest.al
 DateInterest.create(user_id: 4, date_post_id: 44, message: 'This looks like a really fun time and I would love to be considered.')
 DateDecision.create(user_id: User.all.last.id, date_interest_id: DateInterest.all.last.id, decision: true)
 
-DateInterest.create(user_id: 6, date_post_id: 44, message: 'Wow I would love to go on this date with you!')
-DateDecision.create(user_id: User.all.last.id, date_interest_id: DateInterest.all.last.id, decision: true)
-
 DateInterest.create(user_id: 7, date_post_id: 45, message: 'I am the BIggEST Beyonce fan ever I would LOVE TO GO!')
 DateDecision.create(user_id: User.all.last.id, date_interest_id: DateInterest.all.last.id, decision: true)
 
 DateInterest.create(user_id: 8, date_post_id: 46, message: 'I am also a terrible golfer but I think it would be fun if we failed at this together. :)')
 DateDecision.create(user_id: User.all.last.id, date_interest_id: DateInterest.all.last.id, decision: true)
 
-DateInterest.create(user_id: 9, date_post_id: 45, message: 'I can see YOUR halo. (I love Queen Bey please take me)!')
-DateDecision.create(user_id: User.all.last.id, date_interest_id: DateInterest.all.last.id, decision: true)
 
 DateInterest.create(user_id: 10, date_post_id: 47, message: 'I desperately need a break from the city too. Lets get out of here!')
-DateDecision.create(user_id: User.all.last.id, date_interest_id: DateInterest.all.last.id, decision: true)
-
-DateInterest.create(user_id: 18, date_post_id: 42, message: 'I can drink endless amounts of cold brew and would love to with you.')
-DateDecision.create(user_id: User.all.last.id, date_interest_id: DateInterest.all.last.id, decision: true)
-
-DateInterest.create(user_id: 32, date_post_id: 45, message: 'ALL MY SINGLE LADIESS!')
-DateDecision.create(user_id: User.all.last.id, date_interest_id: DateInterest.all.last.id, decision: true)
-
-DateInterest.create(user_id: 23, date_post_id: 43, message: 'I love Gin Fizzes!')
-DateDecision.create(user_id: User.all.last.id, date_interest_id: DateInterest.all.last.id, decision: true)
-
-DateInterest.create(user_id: 24, date_post_id: 43, message: 'This looks like the greatest date ever and I would be honored to be a part of the greatness.')
 DateDecision.create(user_id: User.all.last.id, date_interest_id: DateInterest.all.last.id, decision: true)
 
 # later seeds to make
