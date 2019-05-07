@@ -1,6 +1,6 @@
 puts 'making a profile for dudes'
 User.create(email: 'Thor@email.com', password: 'lightning')
-Profile.create(user_id: User.all.last.id,name: 'Thor', age: 2600, max_age_preference: 6000, min_age_preference: 21, pronouns: 'he/him', location: "Earth 616", image: "https://i.imgur.com/J0dBT2O.jpg", biography: "Greetings Fair Maidens I Am Thor Odinson and My Friend Tony Has Helped Me Acquire This For Dating Rituals.", gender_preference: 'w')
+Profile.create(user_id: User.all.last.id,name: 'Thor', age: 2600, max_age_preference: 6000, min_age_preference: 21, pronouns: 'he/him', location: "New York City", image: "https://i.imgur.com/J0dBT2O.jpg", biography: "Greetings Fair Maidens I Am Thor Odinson and My Friend Tony Has Helped Me Acquire This For Dating Rituals.", gender_preference: 'w')
 DatePost.create(user_id: Profile.all.last.user_id, title: "Feast In My Honor", date: '05/22/2019', description: "I Have Had Many Victories - Come Celebrate At A Feast In My Name.", category: 'restaurant')
 DatePost.create(user_id: Profile.all.last.user_id, title: "Another Coffee", date: '12/22/2019', description: "Coffee Is The Best Mortal Drink Other Than Mead. Let's Meet at the Bucks of Stars.", category: 'coffee')
 
@@ -59,12 +59,12 @@ DatePost.create(user_id: Profile.all.last.user_id, title: "Ice Skating in the sp
 
 puts 'making a profile for gals'
 User.create(email: 'Tammy@email.com', password: "Ron")
-Profile.create(user_id: User.all.last.id, name: "Tammy II", age: 40, max_age_preference: 50, min_age_preference: 40, pronouns: 'she/her', location: "Pawnee", image: "https://vignette.wikia.nocookie.net/parksandrecreation/images/9/9a/Tammy_Two.jpg/revision/latest?cb=20180131190839", biography: "I love just curling up with a good book and plotting how to ensare Ron with my feminine wiles." , gender_preference: 'm')
+Profile.create(user_id: User.all.last.id, name: "Tammy II", age: 40, max_age_preference: 50, min_age_preference: 40, pronouns: 'she/her', location: "Muncie", image: "https://vignette.wikia.nocookie.net/parksandrecreation/images/9/9a/Tammy_Two.jpg/revision/latest?cb=20180131190839", biography: "I love just curling up with a good book and plotting how to ensare Ron with my feminine wiles." , gender_preference: 'm')
 DatePost.create(user_id: Profile.all.last.user_id, title: "Books then Buffet", date: '12/21/2019', description: "I'm a gal who knows how to have fun - let's head to the local library to rummage around the book stacks then go to Pawnee buffett for some late night fuel!", category: 'restaurant')
 DatePost.create(user_id: Profile.all.last.user_id, title: "Shimmy at the Snakehole Lounge", date: '12/21/2019', description: "Ever tried SnakeJuice? Let's slither on over to the lounge on Saturday night!", category: 'bar')
 
 User.create(email: 'Jasmine@email.com', password: "tiger")
-Profile.create(user_id: User.all.last.id, name: "Princess Jasmine", age: 19, max_age_preference: 22, min_age_preference: 20, pronouns: 'she/her', location: "Agrabah", image: "https://i.imgur.com/A6E3PZu.jpg", biography: "I am not like other princesses - I am adventerous! Do you know anyone else with a pet tiger for a best friend? Wait- that's not weird... is it?" , gender_preference: 'm')
+Profile.create(user_id: User.all.last.id, name: "Princess Jasmine", age: 19, max_age_preference: 22, min_age_preference: 20, pronouns: 'she/her', location: "Agra", image: "https://i.imgur.com/A6E3PZu.jpg", biography: "I am not like other princesses - I am adventerous! Do you know anyone else with a pet tiger for a best friend? Wait- that's not weird... is it?" , gender_preference: 'm')
 DatePost.create(user_id: Profile.all.last.user_id, title: "Fly through Agrabah", date: '12/21/2019', description: "I have my ex's magic carpet so let me take you on an unforgettable ride.", category: 'outside')
 DatePost.create(user_id: Profile.all.last.user_id, title: "Sunday Marketplace", date: '12/21/2019', description: "Let's head to the local marketplace and check out some wares!", category: 'other')
 
@@ -91,7 +91,7 @@ Profile.create(user_id: User.all.last.id, name: "Alexandria Ocasio-Cortez", age:
 DatePost.create(user_id: Profile.all.last.user_id, title: "Women's March", date: '12/21/2019', description: "Let's walk and show our support!", category: 'other')
 
 User.create(email: 'Diana@email.com', password: "amazon")
-Profile.create(user_id: User.all.last.id, name: "Princess Diana", age: 5000, max_age_preference: 10000, min_age_preference: 30, pronouns: 'she/her', location: "Themiscyra", image: "https://m.media-amazon.com/images/M/MV5BZWVhYzE0NzgtM2U1Yi00OWM1LWJlZTUtZmNkNWZhM2VkMDczXkEyXkFqcGdeQW1yb3NzZXI@._V1_CR46,0,1401,788_AL_UY268_CR15,0,477,268_AL_.jpg", biography: "I don't think you have ever known a woman like me.", gender_preference: 'all')
+Profile.create(user_id: User.all.last.id, name: "Princess Diana", age: 5000, max_age_preference: 10000, min_age_preference: 30, pronouns: 'she/her', location: "Washington D.C", image: "https://m.media-amazon.com/images/M/MV5BZWVhYzE0NzgtM2U1Yi00OWM1LWJlZTUtZmNkNWZhM2VkMDczXkEyXkFqcGdeQW1yb3NzZXI@._V1_CR46,0,1401,788_AL_UY268_CR15,0,477,268_AL_.jpg", biography: "I don't think you have ever known a woman like me.", gender_preference: 'all')
 DatePost.create(user_id: Profile.all.last.user_id, title: "Private (Invisible) Jet Excursion", date: '12/21/2019', description: "Let me jet you around the world!", category: 'other')
 DatePost.create(user_id: Profile.all.last.user_id, title: "Warrior Workout", date: '12/21/2019', description: "We must stay swole if we ever wish to defeat Ares.", category: 'fitness')
 
@@ -99,10 +99,6 @@ User.create(email: 'Khloe@email.com', password: "true")
 Profile.create(user_id: User.all.last.id, name: "Khloe Kardashian", age: 34, max_age_preference: 40, min_age_preference: 30, pronouns: 'she/her', location: "Calabasas", image: "https://www.etonline.com/sites/default/files/styles/max_970x546/public/images/2019-04/gettyimages-1093812972.jpg?itok=VOHxboHT&h=f0b46730", biography: "Bible - I'm here for love." , gender_preference: 'm')
 DatePost.create(user_id: Profile.all.last.user_id, title: "Salad Date", date: '12/21/2019', description: 'Lets go to this great salad place near me in Calabasas', category: 'restaurant')
 
-
-User.create(email: 'Cara@email.com', password: "liferuiner")
-Profile.create(user_id: User.all.last.id, name: "Cara Delevigne", age: 26, max_age_preference: 40, min_age_preference: 21, pronouns: 'she/her', location: "Los Angeles", image: "https://a57.foxnews.com/media2.foxnews.com/BrightCove/694940094001/2019/02/01/931/524/694940094001_5997526572001_5997525789001-vs.jpg?ve=1&tl=1", biography: "I don't want to talk about Suicide Squad." , gender_preference: 'w')
-DatePost.create(user_id: Profile.all.last.user_id, title: 'Ibiza Getaway', date: '12/21/2019', description: 'I need to step out of town and get a break. Want to join me in Ibiza?', category: 'other')
 
 User.create(email: 'AB@email.com', password: "pll")
 Profile.create(user_id: User.all.last.id, name: "Ashley Benson", age: 29, max_age_preference: 30, min_age_preference: 21, pronouns: 'she/her', location: "Los Angeles", image: "https://s24193.pcdn.co/wp-content/uploads/2017/07/Madilyn-Smith-Entity-Ashley-Benson-1320x720.png", biography: "Please never ask me about PLL." , gender_preference: 'all')
@@ -116,7 +112,31 @@ DatePost.create(user_id: Profile.all.last.user_id, title: 'Sounder Game', date: 
 DatePost.create(user_id: Profile.all.last.user_id, title: 'Storm Game', date: '12/22/2019', description: 'I love basketball and want someone to enjoy it with me. Come cheer on some champions!', category: 'sports')
 
 
+User.create(email: 'Cara@email.com', password: "liferuiner")
+Profile.create(user_id: User.all.last.id, name: "Cara Delevigne", age: 26, max_age_preference: 40, min_age_preference: 21, pronouns: 'they/them', location: "Los Angeles", image: "https://a57.foxnews.com/media2.foxnews.com/BrightCove/694940094001/2019/02/01/931/524/694940094001_5997526572001_5997525789001-vs.jpg?ve=1&tl=1", biography: "I don't want to talk about Suicide Squad." , gender_preference: 'w')
+DatePost.create(user_id: Profile.all.last.user_id, title: 'Ibiza Getaway', date: '12/21/2019', description: 'I need to step out of town and get a break. Want to join me in Ibiza?', category: 'other')
+
+User.create(email: 'Ezra@email.com', password: "flash")
+Profile.create(user_id: User.all.last.id, name: "Ezra Miller", age: 26, max_age_preference: 40, min_age_preference: 21, pronouns: 'they/them', location: "Los Angeles", image: "https://answersafrica.com/wp-content/uploads/2018/07/Ezra-Miller-640x420.jpg", biography: "I don't want to talk about Justice League." , gender_preference: 'all')
+DatePost.create(user_id: Profile.all.last.user_id, title: 'Hike Runyon and watch a sunset', date: '05/09/2019', description: 'I need to get out and do something active. Want to join me for a sunset hike at Runyon?', category: 'outside')
+DatePost.create(user_id: Profile.all.last.user_id, title: 'Smoke out Shoot out', date: '05/09/2019', description: 'I want to relax while playing Apex Legends and smoking weed. Join me?', category: 'other')
+
+User.create(email: 'Ruby@email.com', password: "liferuiner")
+Profile.create(user_id: User.all.last.id, name: "Ruby Rose", age: 26, max_age_preference: 40, min_age_preference: 21, pronouns: 'they/them', location: "Los Angeles", image: "https://i.pinimg.com/originals/e2/01/69/e201698d6ffee54cf74a37a94b3a41cd.jpg", biography: "I don't want to talk about Justice League." , gender_preference: 'wn')
+DatePost.create(user_id: Profile.all.last.user_id, title: 'Surf', date: '05/09/2019', description: 'Catch waves not feelings.', category: 'sports')
+DatePost.create(user_id: Profile.all.last.user_id, title: 'Boxing', date: '05/10/2019', description: 'I want to check out a new boxing spot in Laguna and need a sparring partner. You game?', category: 'sports')
+
+
+puts "making test user"
+User.create(email: 'Test@email.com', password: "test")
+Profile.create(user_id: User.all.last.id, name: "Test User", age: 26, max_age_preference: 40, min_age_preference: 21, pronouns: 'she/her', location: "Los Angeles", image: "https://i.pinimg.com/236x/7c/02/c4/7c02c4dddebf5793d66b135411932617.jpg", biography: "I am just a girl in Los Angeles looking for love and good insta content." , gender_preference: 'all')
+DatePost.create(user_id: Profile.all.last.user_id, title: 'Cold brew and conversation', date: '05/09/2019', description: 'Lets grab a cold brew at Moore Coffee House and talk about all our deep seeded issues and/or hopes and dreams...', category: 'sports')
+DatePost.create(user_id: Profile.all.last.user_id, title: 'Drinks at the Nest, date: '05/10/2019', description: 'There is a gin fizz here that is to die for.', category: 'bar')
+DatePost.create(user_id: Profile.all.last.user_id, title: 'Rollerblade at Santa Monica', date: '05/09/2019', description: 'Meet me at the pier to rollerblade around then stop for a drink after!', category: 'other')
+DatePost.create(user_id: Profile.all.last.user_id, title: 'Beyonce Concert, date: '05/10/2019', description: 'I have been dying to see Beyonce in person since I saw her at Coachella week 1!!', category: 'music')
+DatePost.create(user_id: Profile.all.last.user_id, title: 'Top Golf', date: '05/09/2019', description: 'I am a terrible golfer but I hear that this is the next hot spot to check out!', category: 'sports')
+DatePost.create(user_id: Profile.all.last.user_id, title: 'Bike across the bridge for sightseeing!', date: '05/11/2019', description: 'I desperately need a break from the city and get some sightseeing in. Want to join?', category: 'outside')
+
 # later seeds to make
-# DateInterest.create(user_id: User.all.last.id, date_post_id: DatePost.all.last.id, message: 'looksfunyo')
-# puts 'date decision'
+3# puts 'date decision'
 #DateDecision.create(user_id: User.all.first.id, date_interest_id: DateInterest.all.last.id, decision: true)
