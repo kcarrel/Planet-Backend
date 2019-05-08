@@ -7,7 +7,6 @@ class DateDecisionsController < ApplicationController
 
   def fetch_by_id
     @date_decisions = DateDecision.all.where(date_interest_id: params[:id])
-    byebug
     render :json => @date_decisions, include: '**'
   end
 
